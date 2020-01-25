@@ -19,6 +19,17 @@ def find_greater_pair(src)
   # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
+  array = []
+  pairs = 0
+  while pairs < src.count do
+    max = src[pairs][0]
+    if(max < src[pairs][1])
+      max = src[pairs][1]
+    end
+    array.push(max)
+    pairs += 1
+  end
+return array
 end
 
 def total_even_pairs(src)
