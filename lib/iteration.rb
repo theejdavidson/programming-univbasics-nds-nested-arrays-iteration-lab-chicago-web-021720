@@ -45,6 +45,7 @@ def total_even_pairs(src)
   while pairs < src.count do
     if(src[pairs][0] % 2 == 0 && src[pairs][1] % 2 == 0)
       total += src[pairs][0] + src[pairs][1]
+      pairs += 1
     end
   end
   return total
